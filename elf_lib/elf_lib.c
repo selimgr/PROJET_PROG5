@@ -32,6 +32,6 @@ void read_data_section(FILE *f, void * elf_SH) {
 
 }
 
-void print_data_section(FILE *f, void * elf_SH) {
+void print_data_section(FILE *f, void * elf_SH) {
 
 }
