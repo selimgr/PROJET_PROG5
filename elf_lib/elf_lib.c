@@ -2,6 +2,12 @@
 
 void init_header(FILE *f, void * elf_h) {
     printf("init\n");
+    
+    elf_h = ((Elf32 *) elf_h);
+
+    fread(&((Elf32 *) elf_h)->e_ident, 16, 1, f);
+    fread(&((Elf32 *) elf_h)->e_type, 2, 1, f);
+    fread(&((Elf32 *) elf_h)->e_machine, 2, 1, f);
 }
 void write_elf (FILE *f, void * elf_h);
 

@@ -16,9 +16,9 @@ typedef struct {
    uint16_t      e_type;
    uint16_t      e_machine;
    uint32_t      e_version;
-   Elf32_Addr      e_entry;
-   Elf32_Off      e_phoff;
-   Elf32_Off      e_shoff;
+   Elf32_Addr    e_entry;
+   Elf32_Off     e_phoff;
+   Elf32_Off     e_shoff;
    uint32_t      e_flags;
    uint16_t      e_ehsize;
    uint16_t      e_phentsize;
@@ -33,9 +33,9 @@ typedef struct {
    uint16_t      e_type;
    uint16_t      e_machine;
    uint32_t      e_version;
-   Elf64_Addr      e_entry;
-   Elf64_Off      e_phoff;
-   Elf64_Off      e_shoff;
+   Elf64_Addr    e_entry;
+   Elf64_Off     e_phoff;
+   Elf64_Off     e_shoff;
    uint32_t      e_flags;
    uint16_t      e_ehsize;
    uint16_t      e_phentsize;
