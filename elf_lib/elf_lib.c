@@ -6,7 +6,7 @@ void init_header(FILE *f, void * elf_h) {
 }
 
 void write_elf (FILE *f, void * elf_h) {
-
+    fprintf(f, ((Elf32 *) elf_h)->e_type);
 } 
 
 /* Étape 2 */
