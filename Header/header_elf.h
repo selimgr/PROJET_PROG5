@@ -1,13 +1,15 @@
+#include <stdint.h>
+#include <stdio.h>
 #ifndef __HEADER_ELF_H__
 #define __HEADER_ELF_H__
 
 #define EI_NIDENT 16
 
-typedef uint32_t Elf32_Addr
-typedef uint64_t Elf64_Addr
+typedef uint32_t Elf32_Addr;
+typedef uint64_t Elf64_Addr;
 
-typedef uint32_t Elf32_Off
-typedef uint64_t Elf64_Off
+typedef uint32_t Elf32_Off;
+typedef uint64_t Elf64_Off;
 
 typedef struct {
    unsigned char e_ident[EI_NIDENT];
